@@ -1,0 +1,313 @@
+/*
+Link to Figma: https://scrimba.com/links/santa-saas-figma
+*/
+:root {
+    --red: #8F0002;
+    --light-red: #FFF2F2;
+    --dark-red: #470000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h2 {
+    color: var(--dark-red);
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #969696;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav {
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 2rem 2rem 0;
+    margin-bottom: 7rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 16px;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul, li {
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 12px 45px;
+}
+
+button.transparent-button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+button.white-button {
+    background: #fff;
+    border: 1px solid #fff;
+    color: var(--red);
+}
+
+button.red-button {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: #fff;
+}
+
+nav .transparent-button {
+    margin-left: 4rem;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+header p {
+    color: #fff;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 500px;
+}
+
+.header-img {
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.1);
+    margin: 3rem 2rem 7rem 2rem;
+    width: 92%;
+    z-index: 5;
+}
+
+header::after {
+    content: "";
+    display: block;
+    background-color: var(--red);
+    width: 100vw;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-bottom-right-radius: 50% 30px;
+}
+
+#product {
+    text-align: center;
+}
+
+.product-subtitle {
+    color: #969696;
+    font-size: 14px;
+}
+
+.card-wrap {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    text-align: left;
+    width: 275px;
+}
+
+.card h3 {
+    color: #343434;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    color: var(--red);
+    font-weight: 500;
+}
+
+#solution {
+    background-color: #F2F2FF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 7rem 4rem 1rem;
+}
+
+#solution h2 {
+    font-size: 52px;
+}
+
+#pricing {
+    padding: 6rem 3rem;
+    text-align: center;
+}
+
+.pricing-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.pricing-card {
+    border-radius: 14px;
+    box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.1);
+    padding: 50px 14px;
+    margin-top: 1rem;
+    width: 385px;
+}
+
+.pricing-card h3 {
+    color: var(--dark-red);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.pricing-card.popular {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.pricing-card.popular h3, .pricing-card.popular p, .pricing-card.popular .price, .pricing-card.popular ul, .pricing-card.popular ul li::before {
+    color: #fff;;
+}
+
+.price-wrap {
+    margin: 3rem 0 2rem;
+}
+
+.price {
+    color: var(--dark-red);
+    font-size: 56px;
+}
+
+.pricing-card ul {
+    color: var(--dark-red);
+    text-align: left;
+    margin-top: 2rem;
+    line-height: 32px;
+}
+
+.pricing-card ul li::before {
+    content: "\f058"; /* FontAwesome Unicode */
+    color: var(--red);
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.pricing-card ul li.not-available {
+    text-decoration: line-through;
+}
+
+.pricing-card ul li.not-available::before {
+    color: #c4c4c4;
+}
+
+#customer {
+    padding: 7rem 3rem;
+}
+
+.customer-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.customer-card {
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 385px;
+}
+
+.customer-card blockquote {
+    color: #969696;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+    color: #343434;
+    margin-bottom: 1rem;
+}
+
+#customer img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+footer {
+    background-color: #F9F9F9;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    padding: 5rem 3rem 3rem;
+}
+
+footer .logo {
+    margin-bottom: 1rem;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #343434;
+    line-height: 32px;
+}
