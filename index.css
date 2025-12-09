@@ -335,19 +335,4 @@ footer a {
 }
 
 
- @media screen and (max-width: 800px) {
-  .toggle-menu {
-    display: block;
-    margin-left: auto;
-  }
-
-  .menu {
-    border: 1px solid;
-    display: none;
-    padding: 20px;
-    position: absolute;
-    top: 66px;
-    right: 0;
-    min-width: 100%;
-  }
-}
+ 
